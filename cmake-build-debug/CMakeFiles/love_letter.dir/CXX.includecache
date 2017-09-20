@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//card.h
+
+..//player.h
+memory
+-
+string
+-
+vector
+-
+
+/home/edward/CLionProjects/love_letter/card.cc
+card.h
+-
+
+/home/edward/CLionProjects/love_letter/main.cc
+iostream
+-
+
+/home/edward/CLionProjects/love_letter/player.cc
+player.h
+-
+card.h
+-
+

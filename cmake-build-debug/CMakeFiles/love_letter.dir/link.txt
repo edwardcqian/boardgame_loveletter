@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/love_letter.dir/main.cc.o CMakeFiles/love_letter.dir/card.cc.o CMakeFiles/love_letter.dir/player.cc.o CMakeFiles/love_letter.dir/game.cc.o  -o love_letter 
