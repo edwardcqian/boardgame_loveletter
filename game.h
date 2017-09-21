@@ -8,16 +8,25 @@
 #include<string>
 #include"player.h"
 
-class Card;
+enum card_name {
+  Guard,
+  Priest,
+  Baron,
+  Handmaiden,
+  Prince,
+  King,
+  Countess,
+  Princess
+};
 
 class Game{
   std::vector<Player> player_list;
-  std::vector<std::shared_ptr<Card>> deck;
+  std::vector<int> deck;
   int round;
   int curr_player;
 public:
   Game(int player_num, std::vector<std::string> player_names);
-  void action(std::string cmd);
+  void run_game(std::istream in);
   void rule();
 
 };

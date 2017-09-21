@@ -9,16 +9,16 @@
 #include<string>
 #include<vector>
 
-class Card;
-
 class Player{
-  std::vector<std::shared_ptr<Card>> hand;
-  std::string id;
+  std::vector<int> hand;
+  std::string name;
 public:
-  Player(std::string id);
-  Player();
-  void draw(std::shared_ptr<Card> card);
-  std::shared_ptr<Card> get_card(bool card_num);
+  Player(std::string name);
+  void draw(int card);
+  int get_card(bool card_num);
+  std::string get_name();
+  void print_cards();
+  void discard(bool card_num);
 };
 
 #endif //LOVE_LETTER_PLAYER_H

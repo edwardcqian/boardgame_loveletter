@@ -8,5 +8,6 @@ class Card{
   int num;
 public:
   Card(int num);
+  int get_num();
 };
 #endif //LOVE_LETTER_CARD_H

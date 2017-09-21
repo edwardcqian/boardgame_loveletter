@@ -5,3 +5,7 @@
 #include"card.h"
 
 Card::Card(int num) : num{num} {}
+
+int Card::get_num() {
+  return num;
+}
