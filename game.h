@@ -26,7 +26,8 @@ class Game{
   int curr_player;
 public:
   Game(int player_num, std::vector<std::string> player_names);
-  void run_game(std::istream in);
+  bool run_game(std::istream &in);
+  void use_card(int card, std::istream &in);
   void rule();
 
 };
