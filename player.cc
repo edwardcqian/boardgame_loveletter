@@ -37,7 +37,7 @@ void Player::print_cards() {
   cout << "Card B:" << hand[1] << " " << card_name(hand[1]) << endl;
 }
 
-bool Player::check_status() {
+int Player::check_status() {
   return status;
 }
 

@@ -19,7 +19,7 @@ class Player{
   std::vector<int> hand;
   std::string name;
   int position;
-  bool status; // 0: dead, 1: alive, 2: protected
+  int status; // 0: dead, 1: alive, 2: protected
 public:
   Player(std::string name, int pos);
   void draw(int card);
@@ -27,7 +27,7 @@ public:
   std::string get_name();
   void print_cards();
   void discard(bool card_num);
-  bool check_status();
+  int check_status();
   void change_status(int status);
   void targeted(Player &inPlay, int next, int &deck, int card, int secondary = 0);
 };
